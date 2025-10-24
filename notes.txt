@@ -1,0 +1,36 @@
+Database:
+---------
+>> Database is an organised collection of data that canbe easily accessed, managed and updated.
+
+DBMS (Database Management System)
+-----
+This is a software to store and manage data efficiently.
+Examples: MySQL, Oracle, MongoDB
+
+RDBMS (Relational DBMS)
+------------------------
+>> Data will be stored in form of table(Rows and Column)
+>> To work with RDBMS you must know SQL(Structured Query Language)
+Ex: MySQL, Oracle
+
+
+Non Relational DBMS 
+--------------------
+>> Data will be stored in the form of object, documents....(not in the form of table)
+Ex: MongoDB, MariaDB
+
+SQL(Structured Query Language)
+-------------------------------
+Syntax Rules 
+------------
+>> It is case-insensitive (a=A).
+>> Every Query should end with ';'
+
+Database ---> Tables(as many as u want)  --> 
+(schema)
+student ---> agelist (name, age), marklist
+
+
+Queries 
+--------
+To create a database --> CREATE DATABASE name;
