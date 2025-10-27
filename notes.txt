@@ -30,7 +30,54 @@ Database ---> Tables(as many as u want)  -->
 (schema)
 student ---> agelist (name, age), marklist
 
+Datatypes 
+----------
+Numeric
+---------
+INT ---> whole numbers
+BIGINT --> stores large integers
+FLOAT --> DECIMAL NUMBERS 
+
+STRING 
+-------
+CHAR --> fixed length character string. Ex: char(5) ---> 'hello','world'
+VARCHAR --> variable length character string. Ex: varchar(5) --> 'hello','hi'
+TEXT --> store large amount of text.
+ENUM --->
+
+DATE and TIME 
+--------------
+DATE --> 'yyyy-mm-dd' ex: '2025-05-28'
+TIME --> 'HH:MM:SS'
+
+Constraint 
+------------
+PRIMARY KEY ---> It identifies each row uniquely. unique and not null. (only one PRIMARY KEY per table)
 
 Queries 
 --------
 To create a database --> CREATE DATABASE name;
+To select database --> USE dbname;
+To create a new Table --> CREATE TABLE tbname (
+    col1 datatype constraint,
+    col2 datatype constraint,
+    col3 datatype constraint,
+    .
+    .
+);
+
+To insert row into a table ---> INSERT INTO tbname (col definition(optional)) VALUES (),(),().....;
+To retrive data from table ---> SELECT (col details --> when you want to fetch everything (*)) FROM tbname;
+To update data --> update tbname set col=val,col=val;
+
+CRUD --> CREATE READ UPDATE DELETE
+-----
+CREATE ---> INSERT
+READ  --> SELECT
+UPDATE --> UPDATE
+
+
+WHERE clause
+---------------
+>> To filter data from a table. (select, update, delete)
+Ex:  ...... WHERE condition;
