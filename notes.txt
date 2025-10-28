@@ -54,6 +54,42 @@ Constraint
 ------------
 PRIMARY KEY ---> It identifies each row uniquely. unique and not null. (only one PRIMARY KEY per table)
 
+Opearators:
+----------
+>> it is symbol or keyword that perform operation on values.
+
+basic operators 
+----------------
+=
+<>, !=
+<
+>
+<=
+>=
+
+BETWEEN --> Between two values (inclusive).
+Ex: age BETWEEN 30 and 40;
+
+IN and Not IN --> Matches any value in a list.
+Ex: age In (val1,val2......);
+
+PATTERN MATCHING --> LIKE Opearator (string Column) (matches string with a pattern).
+Ex: col LIKE "pattern";
+ 
+_ --> matches exactly one char.
+% --> matches 0-inf char.
+
+"a%" ---> ashwin, adherse, anand, a
+"%a" ---> aruna,
+"a___" --> arun
+"% a _ _"
+
+Logical Opearators
+--------------------
+AND --> both should be true
+OR ---> any one should be true
+NOT ---> invert
+
 Queries 
 --------
 To create a database --> CREATE DATABASE name;
@@ -68,13 +104,17 @@ To create a new Table --> CREATE TABLE tbname (
 
 To insert row into a table ---> INSERT INTO tbname (col definition(optional)) VALUES (),(),().....;
 To retrive data from table ---> SELECT (col details --> when you want to fetch everything (*)) FROM tbname;
-To update data --> update tbname set col=val,col=val;
+To update data --> UPDATE tbname SET col=val,col=val;
+To delete a data --> DELETE FROM tbname;
+
+SQL_SAFE_UPDATES=1 --> you cannot perform update or delete without filteration. condition must depend on primary key. you can update or delete only one row in one go.
 
 CRUD --> CREATE READ UPDATE DELETE
 -----
 CREATE ---> INSERT
 READ  --> SELECT
 UPDATE --> UPDATE
+DELETE --> DELETE
 
 
 WHERE clause
