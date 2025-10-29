@@ -6,3 +6,5 @@ select * from agelist where not name like "%h%";
 
 select * from agelist where id<4 or age>50;
 
+use student;
+select * from agelist order by age asc limit 3 offset 2;

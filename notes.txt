@@ -88,7 +88,19 @@ Logical Opearators
 --------------------
 AND --> both should be true
 OR ---> any one should be true
-NOT ---> invert
+NOT ---> invert  
+
+SORTING
+--------
+Ex: ..... ORDER BY col ASC/DESC
+
+LIMIT 
+------
+Ex: ..... LIMIT numRes;
+
+OFFSET  (skip the records at the begenning)
+-------
+Ex: .... LIMIT numRes OFFSET numRec; 
 
 Queries 
 --------
@@ -121,3 +133,31 @@ WHERE clause
 ---------------
 >> To filter data from a table. (select, update, delete)
 Ex:  ...... WHERE condition;
+
+Functions
+------------
+>> It is a predefined method that performs an operation on a data and returs a result.
+
+Numeric Function:
+ABS(num) ---> absolute value of that number.
+ROUND(dec) --> round off to closest integer.  round(9.59) --> 10
+CEIL(dec) --> round off to the next integer
+FLOOR(dec) --> rounds off to previous int
+MOD(num1,num2) ---> reminder
+POWER(num1,num2) --> expo
+SQRT(num) --> square root
+
+String Function:
+CONCAT(str1,str2.....) --> attaching together
+LENGTH(str) ---> number of char
+UPPER(str) --> uppercase
+LOWER(str) --> lowercase
+SUBSTRING(str, start, length) --> extract part of string. "Hello world" --> "Hell"
+REPLACE(str, old, new) --> replace a substring with another.
+TRIM(str) --> Removes spaces at end and begenning.
+
+DATE and TIME 
+NOW() --> current date and time 
+CURDATE() --> current date
+CURTIME() --> current time
+DATEDIFF(date1, date2) --> defference
