@@ -45,6 +45,10 @@ VARCHAR --> variable length character string. Ex: varchar(5) --> 'hello','hi'
 TEXT --> store large amount of text.
 ENUM --->
 
+Boolean
+---------
+BOOLEAN --> 1,0
+
 DATE and TIME 
 --------------
 DATE --> 'yyyy-mm-dd' ex: '2025-05-28'
@@ -52,7 +56,19 @@ TIME --> 'HH:MM:SS'
 
 Constraint 
 ------------
-PRIMARY KEY ---> It identifies each row uniquely. unique and not null. (only one PRIMARY KEY per table)
+>> It is a rule applied to a cloumn to limit the type of data that can go into a table
+
+PRIMARY KEY ---> It identifies each row uniquely. unique and not null. (only one PRIMARY KEY per table).
+
+FOREIGN KEY ---> To establish link bet ween two tables.
+FOREIGN KEY (col) REFERENCES PRIMARY KEY of another table;
+>> It refers to primary key of another table.
+
+AUTO_INCREMENT --> It automatically generates sequential numbers. 1,2,3,4.....(used with primary key column)
+UNIQUE --> Ensures no duplicates
+NOT NULL --> Ensures no NULL
+DEFAULT ---> assigns default value to a column
+
 
 Opearators:
 ----------
