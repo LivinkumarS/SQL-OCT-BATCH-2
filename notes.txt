@@ -177,3 +177,51 @@ NOW() --> current date and time
 CURDATE() --> current date
 CURTIME() --> current time
 DATEDIFF(date1, date2) --> defference
+
+Joins 
+-------
+>> It is used to combine rows from two or more tables based on related columns(foreign key)
+
+INNER JOIN
+------------
+>> It returns only rows that have matching values in both tables.
+EX: select..... INNER JOIN tableName ON expression;
+select a.name,a.email,
+l.movie as latestmovie
+from actor a inner join latestmovie l ON 
+a.id=l.actorId;
+
+LEFT JOIN 
+------------
+>> It returns all the rows from left table and matches records from right table.
+Ex: select..... LEFT JOIN tableName ON expression;
+
+RIGHT JOIN 
+------------
+>> It returns all the rows from right table and matches records from left table.
+Ex: select..... RIGHT JOIN tableName ON expression;
+
+CROSS JOIN 
+-----------
+Produces cartesian product ---> every row of lef tb and every row of right tb.
+Ex: select..... cross join tbname;
+
+no of rows in result = rows of left * rows of right
+
+tb1
+---
+color 
+red 
+blue
+
+tb2 
+-----
+size
+xl
+xxl
+
+color    size
+red      xl 
+red      xxl
+blue     xl 
+blue     xxl
