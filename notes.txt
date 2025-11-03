@@ -225,3 +225,23 @@ red      xl
 red      xxl
 blue     xl 
 blue     xxl
+
+Aggregate Function 
+------------------
+>> Combining multiple rows of data into single value.
+
+SUM --> adding multiplevalues from multiple rows.
+COUNT --> number of data.
+AVG --> average of a column
+MAX --> finds out the largest value from a col.
+MIN --> finds out the smallest value from a col.
+
+Grouping 
+------------
+GROUP BY --> used to group rows that have same values in specified column.
+Ex: select sum(col) from tbname group by col;
+
+WHERE --> filter the rows;
+HAVING ---> filter groups;
+
+Ex: ...... HAVING exp;
