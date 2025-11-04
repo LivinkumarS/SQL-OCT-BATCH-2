@@ -245,3 +245,22 @@ WHERE --> filter the rows;
 HAVING ---> filter groups;
 
 Ex: ...... HAVING exp;
+
+Subqueries
+--------------
+>> A Subquery (or inner query) is a query inside another query.
+>> It helps to fetch data based on the result of another query.
+
+Ex: main (inner query)  --> inner query will get executed first.
+
+Single row Subqueries
+------------------------
+>> Subquery returns only one row.
+
+Multiple row Subqueries
+------------------------
+>> Subquery returns more than one row.
+
+Correlated Subquery 
+-------------------
+>> Inner query depends on the main query.
