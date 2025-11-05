@@ -150,6 +150,22 @@ WHERE clause
 >> To filter data from a table. (select, update, delete)
 Ex:  ...... WHERE condition;
 
+Altering Table 
+--------------
+ALTER --> clause.
+Ex:  ALTER TABLE tbname <alteration u want>;
+
+To add a new column --> ALTER TABLE tbname ADD COLUMN colDetails;
+To Drop a col ---> ALTER TABLE tbname DROP COLUMN colName;
+To modify a col --> ALTER TABLE tbname MODIFY COLUMN cloname modification;
+To Rename a col --> ALTER TABLE tbname RENAME COLUMN colname TO newName;
+
+To rename table itself --> ALTER TABLE tbname RENAME TO newName;
+To add constraint --> ALTER TABLE tbname ADD CONSTRAINT (constraint defenition);
+
+To Drop a table --> DROP TABLE tbname;
+To Drop a schema --> DROP DATABASE dbname;
+
 Functions
 ------------
 >> It is a predefined method that performs an operation on a data and returs a result.
@@ -264,3 +280,12 @@ Multiple row Subqueries
 Correlated Subquery 
 -------------------
 >> Inner query depends on the main query.
+
+Views 
+-------
+>> Views are virtual tables that store an SQL query instead of actual data.
+Query to create view --> CREATE VIEW view_name AS SELECT ....;
+
+Ex: create view actressInfo as 
+select id as actressId, email, mobile from actresslist;
+
